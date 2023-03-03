@@ -1,4 +1,31 @@
 img {
-  width: 480px;
-  height: 250px;
+  filter: grayscale(50%);
+  width: 100%;
+  height: auto;
+  transition: all, 0.5s;
+}
+
+.grid div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all, 0.2s;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(86, 86, 86);
+}
+
+img:hover {
+  filter: grayscale(0%);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 33.333vw);
+  grid-template-rows: repeat(3, 33.333vh);
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=galerie.css.map */
